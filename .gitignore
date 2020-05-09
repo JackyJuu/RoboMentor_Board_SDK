@@ -1,0 +1,10 @@
+.idea
+.DS*
+.git
+DebugConfig
+Listings
+Objects
+RoboMentor_Board.uvguix.mentors
+RoboMentor_Board.uvoptx
+JLinkLog.txt
+JLinkSettings.ini
