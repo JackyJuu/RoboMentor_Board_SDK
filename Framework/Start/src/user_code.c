@@ -40,9 +40,10 @@ void user1_main(void)
 	while(1)
 	{
 
-		delay_ms(1);
+
 	}
 }
+
 
 void user2_main(void)
 {

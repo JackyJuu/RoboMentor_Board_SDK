@@ -40,7 +40,7 @@ int main(void)
 	
 	//蜂鸣器 初始化
 	Buzzer_Init();
-	RoboMentor_Board_Start_Music();
+//	RoboMentor_Board_Start_Music();
 	
 	//24v电源 初始化
 	Power_24V_Init();

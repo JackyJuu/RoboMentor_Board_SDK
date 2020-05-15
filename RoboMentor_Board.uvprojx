@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F427_437xx,USE_STM324x9I_EVAL,USE_USB_OTG_FS,USE_ULPI_PHY</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Framework\Core;.\Framework\Conf;.\Framework\Driver\inc;.\Framework\Api\inc;.\Framework\Service\inc;.\Framework\Start\inc;.\Framework\Service\USB_Driver\inc;.\Framework\Service\USB_Library\Core\inc;.\Framework\Service\USB_Library\Class\cdc\inc;.\Framework\Service\FreeRTOS\include;.\Framework\Test_code;.\Framework\Cjson;.\Framework\RoboMentor_Board\inc</IncludePath>
+              <IncludePath>.\Framework\Core;.\Framework\Conf;.\Framework\Driver\inc;.\Framework\Api\inc;.\Framework\Service\inc;.\Framework\Start\inc;.\Framework\Service\USB_Driver\inc;.\Framework\Service\USB_Library\Core\inc;.\Framework\Service\USB_Library\Class\cdc\inc;.\Framework\Service\FreeRTOS\include;.\Framework\Test_code;.\Framework\Cjson;.\Framework\RoboMentor\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -398,6 +398,11 @@
               <FilePath>.\Framework\Start\src\user_code.c</FilePath>
             </File>
             <File>
+              <FileName>stm32fxxx_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Framework\Start\src\stm32fxxx_it.c</FilePath>
+            </File>
+            <File>
               <FileName>user_instruction.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Framework\Start\src\user_instruction.c</FilePath>
@@ -425,12 +430,12 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>RoboMentor_lib</GroupName>
+          <GroupName>RoboMentor_Lib</GroupName>
           <Files>
             <File>
               <FileName>RoboMentor_Board.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>.\Framework\lib\RoboMentor_Board.lib</FilePath>
+              <FilePath>.\Framework\Lib\RoboMentor_Board.lib</FilePath>
             </File>
           </Files>
         </Group>

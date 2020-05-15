@@ -19,13 +19,12 @@ typedef enum
 
 typedef enum
 {
-	USART_1,
-	USART_2,
-	USART_3,
-	USART_4,
-	USART_6,
-	UART_7,
-	UART_8
+	USART_1 = 1,
+	USART_2 = 2,
+	USART_3 = 3,
+	USART_6 = 6,
+	UART_7 = 7,
+	UART_8 = 8
 }USART_t;
 
 void USART1_Init(void);
