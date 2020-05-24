@@ -413,6 +413,24 @@ typedef struct
 	int angle;
 }SERVO_MOTOE_ANGLE_READ_t;
 
+//设置总线舵机是否上电
+typedef struct
+{
+	char* type;
+	int channel;
+	int id;
+	int status;
+}SERVO_MOTOE_STATUS_SET_t;
+
+//读取总线舵机是否上电
+typedef struct
+{
+	char* type;
+	int channel;
+	int id;
+	int status;
+}SERVO_MOTOE_STATUS_READ_t;
+
 //总线舵机数据交互
 typedef struct
 {
@@ -431,6 +449,8 @@ typedef struct
 	SERVO_MOTOE_STOP_SET_t SERVO_MOTOE_STOP_SET;
 	SERVO_MOTOE_VIN_READ_t SERVO_MOTOE_VIN_READ;
 	SERVO_MOTOE_ANGLE_READ_t SERVO_MOTOE_ANGLE_READ;
+	SERVO_MOTOE_STATUS_SET_t SERVO_MOTOE_STATUS_SET;
+	SERVO_MOTOE_STATUS_READ_t SERVO_MOTOE_STATUS_READ;
 }SERVO_MOTOE_t;
 
 /******ALL_JSON******/

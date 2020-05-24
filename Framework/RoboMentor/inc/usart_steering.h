@@ -57,7 +57,8 @@ typedef enum
 	STEERING_VIN_LIMIT_READ,//读取总线舵机电压范围
 	STEERING_MOTION_READ,//总线舵机运动状态读取
 	STEERING_VIN_READ,//读取总线舵机当前输入电压
-	STEERING_POS_READ//读取总线舵机当前位置角度数据
+	STEERING_POS_READ,//读取总线舵机当前位置角度数据
+	STEERING_STATUS_READ//读取总线舵机当前电压数据
 }Steering_Read_Mode_t;
 
 extern uint8_t LobotRxBuf[16];
@@ -100,6 +101,10 @@ void Steerint_Stop_Motion(uint8_t id,USART_t USART);
 void Steerint_Vin_Read(uint8_t id,USART_t USART);
 //读取总线舵机当前位置角度数据
 void Steerint_Now_Angle_Read(uint8_t id,USART_t USART);
+//设置舵机是否上电
+void Steerint_Status_Set(uint8_t id,uint8_t status,USART_t USART);
+//读取舵机是否上电
+void Steerint_Status_Read(uint8_t id,USART_t USART);
 
 
 void uartInit(u32 bound);

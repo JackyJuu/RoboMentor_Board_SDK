@@ -40,7 +40,7 @@ void user1_main(void)
 	while(1)
 	{
 
-
+		delay_ms(1);
 	}
 }
 
