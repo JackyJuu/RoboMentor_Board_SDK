@@ -453,6 +453,30 @@ typedef struct
 	SERVO_MOTOE_STATUS_READ_t SERVO_MOTOE_STATUS_READ;
 }SERVO_MOTOE_t;
 
+/******FLASH_JSON******/
+//FLASH写入操作
+typedef struct
+{
+	char* type;
+	char* Address;
+	char* data;
+}FLASH_WRITE_JSON_t;
+
+//FLASH读取操作
+typedef struct
+{
+	char* type;
+	char* Address;
+	int data_long;
+}FLASH_READ_JSON_t;
+
+//FLASH读写数据交互
+typedef struct
+{
+	FLASH_WRITE_JSON_t FLASH_WRITE_JSON;
+	FLASH_READ_JSON_t FLASH_READ_JSON;
+}FLASH_JSON_t;
+
 /******ALL_JSON******/
 //所有json数据交互结构体
 typedef struct
@@ -469,6 +493,7 @@ typedef struct
 	BUZZER_JSON_t BUZZER_JSON;
 	TF_CARD_JSON_t TF_CARD_JSON;
 	SERVO_MOTOE_t SERVO_MOTOE;
+	FLASH_JSON_t FLASH_JSON;
 }ALL_JSON_t;
 
 typedef enum
