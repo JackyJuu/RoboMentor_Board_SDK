@@ -130,6 +130,30 @@
 #define PWM_PI7_READ  GPIO_ReadInputDataBit(GPIOI,GPIO_Pin_7)
 #define PWM_PI2_READ  GPIO_ReadInputDataBit(GPIOI,GPIO_Pin_2)
 
+#define PWM_PA8_READ  GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_8)
+#define PWM_PA9_READ  GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_9)
+#define PWM_PE13_READ  GPIO_ReadInputDataBit(GPIOE,GPIO_Pin_13)
+#define PWM_PE14_READ  GPIO_ReadInputDataBit(GPIOE,GPIO_Pin_14)
+
+#define PWM_PA8_HIGH()     GPIO_ResetBits(GPIOA, GPIO_Pin_8)
+#define PWM_PA8_LOW()     	GPIO_SetBits(GPIOA, GPIO_Pin_8)
+#define PWM_PA8_TOGGLE()   GPIO_ToggleBits(GPIOA, GPIO_Pin_8)
+
+#define PWM_PA9_HIGH()     GPIO_ResetBits(GPIOA, GPIO_Pin_9)
+#define PWM_PA9_LOW()     	GPIO_SetBits(GPIOA, GPIO_Pin_9)
+#define PWM_PA9_TOGGLE()   GPIO_ToggleBits(GPIOA, GPIO_Pin_9)
+
+#define PWM_PE13_HIGH()     GPIO_ResetBits(GPIOE, GPIO_Pin_13)
+#define PWM_PE13_LOW()     	GPIO_SetBits(GPIOE, GPIO_Pin_13)
+#define PWM_PE13_TOGGLE()   GPIO_ToggleBits(GPIOE, GPIO_Pin_13)
+
+#define PWM_PE14_HIGH()     GPIO_ResetBits(GPIOE, GPIO_Pin_14)
+#define PWM_PE14_LOW()     	GPIO_SetBits(GPIOE, GPIO_Pin_14)
+#define PWM_PE14_TOGGLE()   GPIO_ToggleBits(GPIOE, GPIO_Pin_14)
+
+
+
+
 #define PWM_PD12_HIGH()     GPIO_ResetBits(GPIOD, GPIO_Pin_12)
 #define PWM_PD12_LOW()     	GPIO_SetBits(GPIOD, GPIO_Pin_12)
 #define PWM_PD12_TOGGLE()   GPIO_ToggleBits(GPIOD, GPIO_Pin_12)

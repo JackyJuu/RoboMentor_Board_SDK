@@ -44,6 +44,15 @@ typedef enum
 
 typedef enum
 {
+	PA8 = 1,
+	PA9 = 2,
+	PE13 = 3,
+	PE14 = 4,
+	ALL_PWM_Motor_Channel
+}PWM_Motor_Channel_t;
+
+typedef enum
+{
 	Mode_In,
 	Mode_Out,
 	Mode_PWM_Up,
@@ -56,6 +65,14 @@ typedef enum
 	PWM_IO_Low,
 	PWM_IO_Toggle	
 }PWM_Out_t;
+
+
+void PWM_Motor_Init(PWM_Motor_Channel_t PWM_Motor_Channel,PWM_Mode_t PWM_Mode);
+void PWM_Motor_Set(PWM_Motor_Channel_t PWM_Motor_Channel,uint16_t psc,uint16_t pwm);
+void PWM_Motor_Out_Set(PWM_Motor_Channel_t PWM_Motor_Channel,PWM_Out_t PWM_Out);
+int PWM_Motor_Scan(PWM_Motor_Channel_t PWM_Motor_Channel);
+
+
 
 void PWM_Io_Init(PWM_Channel_t PWM_Channel,PWM_Mode_t PWM_Mode);
 void PWM_Set(PWM_Channel_t PWM_Channel,uint16_t psc,uint16_t pwm);
