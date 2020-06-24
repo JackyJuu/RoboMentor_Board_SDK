@@ -398,11 +398,6 @@
               <FilePath>.\Framework\Start\src\user_code.c</FilePath>
             </File>
             <File>
-              <FileName>stm32fxxx_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Framework\Start\src\stm32fxxx_it.c</FilePath>
-            </File>
-            <File>
               <FileName>user_instruction.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Framework\Start\src\user_instruction.c</FilePath>
