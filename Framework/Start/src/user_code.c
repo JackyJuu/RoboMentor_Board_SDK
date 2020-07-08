@@ -16,7 +16,7 @@
 							#include "imu.h"
 							#include "usb_uart.h"
 							#include "flash.h"
-  * @version V1.0.0
+  * @version V1.9.3
   ******************************************************************************
 	* @describe 用户代码编写处
 */

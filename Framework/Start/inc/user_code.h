@@ -7,7 +7,7 @@
 
 #include "stm32f4xx.h"
 
-#define RoboMentor_Board_Mission 1
+#define RoboMentor_Board_Mission 0
 
 #define User_Mission_1 1
 #define User_Mission_2 1
