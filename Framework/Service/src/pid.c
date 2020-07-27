@@ -67,6 +67,16 @@ void pid_init(PID*pid,float p,float i,float d,int maxout,int imaxout,int mode)
 	pid->last_plus_out =0;
 }
 
+//pid参数更新
+void pid_change(PID*pid,float p,float i,float d,int maxout,int imaxout,int mode)
+{
+	pid->kp=p;
+	pid->ki=i;
+	pid->kd =d;
+	pid->pid_mode =mode;//1为位置环PID，2为增量式PID
+	pid->MaxOutput =maxout;//PID限幅
+	pid->IntegralLimit=imaxout;	
+}
 
 //PID函数
 float pid_calc(PID*pid, float now, float set)

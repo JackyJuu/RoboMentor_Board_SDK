@@ -21,7 +21,7 @@ typedef struct PID
 	int pid_mode;	//PID模式设置，1为位置环PID，2为增量式PID
  
   float MaxOutput;//PID输出限幅	
-	float IntegralLimit;
+	float IntegralLimit;//I输出限幅	
 	float plus;		//本次增量值
   float plus_out;	//增量式输出值plus_out = last_plus_out + plus
   float last_plus_out;//上次增量式输出值
@@ -41,6 +41,9 @@ void PID_juedui(float *a);
 
 //PID初始化
 void pid_init(PID*pid,float p,float i,float d,int maxout,int imaxout,int mode);
+
+//pid参数更新
+void pid_change(PID*pid,float p,float i,float d,int maxout,int imaxout,int mode);
 
 //PID函数
 float pid_calc(PID*pid, float now, float set);

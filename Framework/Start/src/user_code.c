@@ -17,6 +17,7 @@
 							#include "imu.h"
 							#include "usb_uart.h"
 							#include "djirc.h"
+							#include "flash.h"
 							#include "pid.h"
   * @version 	V1.9.6
 	* @data			V1.9.6:新增PID控制代码""pid.c"和"pid.h"
@@ -40,6 +41,7 @@
 #include "imu.h"
 #include "usb_uart.h"
 #include "djirc.h"
+#include "flash.h"
 #include "pid.h"
 
 void user1_main(void)
