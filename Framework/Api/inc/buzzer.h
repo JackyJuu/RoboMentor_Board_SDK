@@ -18,7 +18,6 @@
 #define LA_MIDDLE 72000000/900/440
 #define SI_MIDDLE 72000000/900/494
 
-
 #define DO_1 72000000/900/260
 #define MI_2 72000000/900/340
 #define SO_3 72000000/900/400
@@ -48,5 +47,11 @@ void buzzer_off(void);
 
 void qianyuqianxun_song(void);
 void little_star_song(void);
+
+//正常速度，misic_tim 250，stop_tim 50
+//千与千寻 1-61
+void qianyuqianxun_song_step(int step,int misic_tim,int stop_tim);
+//小星星 1-44
+void little_star_song_step(int step,int misic_tim,int stop_tim);
 
 #endif

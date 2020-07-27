@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    main.c
   * @author  RoboMentor,  site:www.robomentor.cn
-  * @version V1.0.0
+  * @version V1.9.6
   ******************************************************************************
 	* @describe 程序启动入口
 */
@@ -10,6 +10,7 @@
 #include "stm32fxxx_it.h"
 #include "led.h"
 #include "imu.h"
+#include "djirc.h"
 #include "buzzer.h"
 #include "power.h"
 #include "can.h"
@@ -30,7 +31,7 @@ int main(void)
  {
 	//时钟 初始化
 	delay_init(configTICK_RATE_HZ);
-	 
+	
 #if RoboMentor_Board_Mission == 1	 
 	//虚拟USB 初始化
 	usb_Init();
@@ -52,7 +53,9 @@ int main(void)
 	CAN2_Init();
 	
 	//USART 初始化
+	#if DJI_Remote_Control == 0
 	USART1_Config(115200,Usart_TxRx,Usart_Parity_No);
+	#endif
 	USART2_Config(115200,Usart_TxRx,Usart_Parity_No);
 	USART3_Config(115200,Usart_TxRx,Usart_Parity_No);
 	USART6_Config(115200,Usart_TxRx,Usart_Parity_No);
@@ -76,6 +79,10 @@ int main(void)
 	
 	//ADC 初始化
 	Adc_Init();
+#endif
+
+#if DJI_Remote_Control == 1
+	DJI_Remote_Control_Init();
 #endif
 
 	//freertos任务初始化

@@ -402,11 +402,6 @@
               <FileType>1</FileType>
               <FilePath>.\Framework\Start\src\user_instruction.c</FilePath>
             </File>
-            <File>
-              <FileName>IRQHandler.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Framework\Start\src\IRQHandler.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -425,12 +420,27 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>RoboMentor_Lib</GroupName>
+          <GroupName>Service</GroupName>
+          <Files>
+            <File>
+              <FileName>IRQHandler.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Framework\Service\src\IRQHandler.c</FilePath>
+            </File>
+            <File>
+              <FileName>pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Framework\Service\src\pid.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RoboMentorLib</GroupName>
           <Files>
             <File>
               <FileName>RoboMentor_Board.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>.\Framework\Lib\RoboMentor_Board.lib</FilePath>
+              <FilePath>.\Framework\lib\RoboMentor_Board.lib</FilePath>
             </File>
           </Files>
         </Group>

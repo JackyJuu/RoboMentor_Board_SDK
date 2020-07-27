@@ -3,7 +3,7 @@
   * @file    user_instruction.c
   * @author  JackyJuu,  site:www.robomentor.cn
 	* @Note 	 You can try some personal instruction.
-  * @version V1.0.0
+  * @version V1.9.6
   ******************************************************************************
 	* @describe 用户指令编写处
 */
@@ -19,7 +19,6 @@ char User_Instruction5[] = "test5";
 
 void user1_instruction()
 {
-	
 }
 
 void user2_instruction()
